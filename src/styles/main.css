@@ -1,0 +1,61 @@
+@import "./themify.css";
+@import "./reset.css";
+@import "./utility.css";
+
+/* Small screens */
+@media (max-width: 720px) {
+    .menu {
+        top: 0;
+        position: relative; /* remove for sticky header*/
+        width: 100vw;
+        height: 5rem;
+        outline: 1px solid #13392c;
+        background-color: #13392c;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-items {
+        margin-top: 0;
+    }
+
+    .menu-item .navbar {
+        display: none;
+    }
+
+    .settings {
+        height: 100%;
+        padding: 0 2rem;
+    }
+
+    .menu-item:last-of-type {
+        margin-top: 0;
+    }
+
+    .about {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+
+    main,
+    .lab,
+    .markdown {
+        margin-left: 0;
+        margin-top: 1rem; /* change to 5rem when stick header is activated*/
+    }
+}
+
+
+/* Large screens */
+@media (min-width: 1024px) {
+    /* body {
+        display: flex;
+        place-items: center;
+    } */
+}
+
+
+ 

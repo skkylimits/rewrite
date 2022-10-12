@@ -1,0 +1,457 @@
+
+/* ---------------------------------------*/
+/*             UTILITY CLASSES ⌚         */
+/* ---------------------------------------*/
+
+/* ---------------------------*/
+/*          CONTAINERS        */
+/* ---------------------------*/
+
+.container {
+    max-width: 60rem;
+    min-width: 20rem;
+    min-height: 100vw;
+    
+    margin: auto 10rem ;
+    margin-inline: auto;
+    padding-inline: 2rem;
+   
+    background-color: var(--color-background);
+    outline: 1px splid yellow;
+}
+
+.modals-container {
+    position: initial;
+}
+
+/* --------------------*/
+/*         FLEX        */
+/* --------------------*/
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.inline-flex { display: inline-flex; }
+
+/* Flex direction */
+.flex-row  { flex-direction: row; } /* Default */
+.flex-row-reverse { flex-direction: row-reverse; }
+.flex-column  { flex-direction: column; }
+.flex-column-reverse { flex-direction: column-reverse; }
+
+
+/* Flex wrap */
+.flex-nowrap  { flex-wrap: nowrap; } /* Default */
+.flex-wrap  { flex-wrap: wrap; }
+.flex-wrap-reverse { flex-wrap: wrap-reverse; }
+
+
+/* Justify content */
+.justify-start { justify-content: flex-start; } /* Default */
+.justify-end { justify-content: flex-end; }
+.justify-center  { justify-content: center; }
+.justify-around { justify-content: space-around; }
+.justify-between { justify-content: space-between; }
+
+
+/* Align content */
+.content-start { align-content: flex-start; }
+.content-end { align-content: flex-end; }
+.content-center { align-content: center; }
+.content-between { align-content: space-between; }
+.content-around { align-content: space-around; }
+.content-stretch { align-content: stretch; }
+
+
+/* Align items */
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.items-center { align-items: center; }
+.items-stretch   { align-items: stretch; } /* Default */
+.items-baseline  { align-items: baseline; }
+
+
+/* Align self */
+.self-auto  { align-self: auto; } /* Default */
+.self-start{ align-self: flex-start; }
+.self-center  { align-self: center; }
+.self-end{ align-self: flex-end; }
+.self-stretch  { align-self: stretch; }
+.self-baseline  { align-self: baseline }
+
+
+/* Flex grow */
+.flex-grow-0  { flex-grow: 0; } /* Default */
+.flex-grow-1 { flex-grow: 1; }
+
+
+/* Flex shrink */
+.flex-shrink-0 { flex-shrink: 0; }
+.flex-shrink-1{ flex-shrink: 1; } /* Default */
+
+
+/* Flex basis */
+.flex-basis-auto { flex-basis: auto; } /* Default */
+.flex-basis-0 { flex-basis: 0; }
+
+
+/* Order */
+.order-0 { order: 0; }
+.order-1 { order: 1; }
+.order-2 { order: 2; }
+.order-3 { order: 3; }
+.order-4 { order: 4; }
+.order-5 { order: 5; }
+.order-6 { order: 6; }
+.order-7 { order: 7; }
+.order-8 { order: 8; }
+.order-last { order: 99999; }
+
+/* --------------------*/
+/*         GRID        */
+/* --------------------*/
+/* https://github.com/stackrole/css-grid-utility/blob/master/css-grid-utility.css */
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+/* ----------------------*/
+/*         SPACING       */
+/* ----------------------*/
+/* margin & padding utility */
+.ma-0,
+.my-0,
+.mt-0 {
+    margin-top: 0;
+}
+
+.ma-q,
+.my-q,
+.mt-q {
+    margin-top: 0.25rem;
+}
+
+.ma-h,
+.my-h,
+.mt-h {
+    margin-top: 0.5rem;
+}
+
+.ma-1,
+.my-1,
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.ma-2,
+.my-2,
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.ma-3,
+.my-3,
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.ma-6,
+.my-6,
+.mt-6 {
+    margin-top: 3rem;
+}
+
+.ma-7,
+.my-7,
+.mt-7 {
+    margin-top: 7rem;
+}
+
+
+.ma-9,
+.my-9,
+.mt-9 {
+    margin-top: 9rem;
+}
+
+.ma-0,
+.my-0,
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.ma-q,
+.my-q,
+.mb-q {
+    margin-bottom: 0.25rem;
+}
+
+.ma-h,
+.my-h,
+.mb-h {
+    margin-bottom: 0.5rem;
+}
+
+.ma-1,
+.my-1,
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.ma-2,
+.my-2,
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.ma-3,
+.my-3,
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.ma-0,
+.mx-0,
+.ml-0 {
+    margin-left: 0;
+}
+
+.ma-q,
+.mx-q,
+.ml-q {
+    margin-left: 0.25rem;
+}
+
+.ma-h,
+.mx-h,
+.ml-h {
+    margin-left: 0.5rem;
+}
+
+.ma-1,
+.mx-1,
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.ma-2,
+.mx-2,
+.ml-2 {
+    margin-left: 2rem;
+}
+
+.ma-3,
+.mx-3,
+.ml-3 {
+    margin-left: 3rem;
+}
+
+.ma-0,
+.mx-0,
+.mr-0 {
+    margin-right: 0;
+}
+
+.ma-q,
+.mx-q,
+.mr-q {
+    margin-right: 0.25rem;
+}
+
+.ma-h,
+.mx-h,
+.mr-h {
+    margin-right: 0.5rem;
+}
+
+.ma-1,
+.mx-1,
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.ma-2,
+.mx-2,
+.mr-2 {
+    margin-right: 2rem;
+}
+
+.ma-3,
+.mx-3,
+.mr-3 {
+    margin-bottom: 3rem;
+}
+
+.pa-0,
+.py-0,
+.pt-0 {
+    padding-top: 0;
+}
+
+.pa-q,
+.py-q,
+.pt-q {
+    padding-top: 0.25rem;
+}
+
+.pa-h,
+.py-h,
+.pt-h {
+    padding-top: 0.5rem;
+}
+
+.pa-1,
+.py-1,
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.pa-2,
+.py-2,
+.pt-2 {
+    padding-top: 2rem;
+}
+
+.pa-3,
+.py-3,
+.pt-3 {
+    padding-top: 3rem;
+}
+
+.pa-0,
+.py-0,
+.pb-0 {
+    padding-bottom: 0;
+}
+
+.pa-q,
+.py-q,
+.pb-q {
+    padding-bottom: 0.25rem;
+}
+
+.pa-h,
+.py-h,
+.pb-h {
+    padding-bottom: 0.5rem;
+}
+
+.pa-1,
+.py-1,
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+.pa-2,
+.py-2,
+.pb-2 {
+    padding-bottom: 2rem;
+}
+
+.pa-3,
+.py-3,
+.pb-3 {
+    padding-bottom: 3rem;
+}
+
+.pa-0,
+.px-0,
+.pl-0 {
+    padding-left: 0;
+}
+
+.pa-q,
+.px-q,
+.pl-q {
+    padding-left: 0.25rem;
+}
+
+.pa-h,
+.px-h,
+.pl-h {
+    padding-left: 0.5rem;
+}
+
+.pa-1,
+.px-1,
+.pl-1 {
+    padding-left: 1rem;
+}
+
+.pa-2,
+.px-2,
+.pl-2 {
+    padding-left: 2rem;
+}
+
+.pa-3,
+.px-3,
+.pl-3 {
+    padding-left: 3rem;
+}
+
+.pa-0,
+.px-0,
+.pr-0 {
+    padding-right: 0;
+}
+
+.pa-q,
+.px-q,
+.pr-q {
+    padding-right: 0.25rem;
+}
+
+.pa-h,
+.px-h,
+.pr-h {
+    padding-right: 0.5rem;
+}
+
+.pa-1,
+.px-1,
+.pr-1 {
+    padding-right: 1rem;
+}
+
+.pa-2,
+.px-2,
+.pr-2 {
+    padding-right: 2rem;
+}
+
+.pa-3,
+.px-3,
+.pr-3 {
+    padding-right: 3rem;
+}
+
+/* select everything except first child (does the element have a sibling before it?) */
+.flow>*:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+    /* use --flow-space to adjust in inline css*/
+}
+
+.flow-space>*+* {
+    margin-top: 1rem;
+}
+
+
+/* -----------------------*/
+/*         UTILITY        */
+/* -----------------------*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    /* added line */
+    border: 0;
+}
