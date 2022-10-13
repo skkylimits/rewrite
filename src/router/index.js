@@ -9,7 +9,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'root',
-    //   component: Atoms,
+      component: Lab,
     },
     {
       path: '/docs',

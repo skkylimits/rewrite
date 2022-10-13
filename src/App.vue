@@ -18,12 +18,12 @@ import IconImac from '~icons/heroicons-solid/computer-desktop'
     <nav class="menu">
         <div class="menu-item">
             <div class="logo">
-                <RouterLink href="#" class="nav-link hover-logo" to="/">
+                <RouterLink href="#" class="nav-link logo-hover" to="/">
                     <span class="link-text logo-text">Rewrite</span>
                     <Logo class="mt-h">
                         <!-- find a flexbox alternative -->
                         <template #icon>
-                            <FireshipSVG class="transform-rotate" />
+                            <FireshipSVG class="logo-rotate" />
                         </template>
                     </Logo>
                 </RouterLink>
@@ -35,7 +35,7 @@ import IconImac from '~icons/heroicons-solid/computer-desktop'
         <div class="menu-item">
             <ul class="navbar">
                 <li class="nav-item">
-                    <RouterLink href="#" class="nav-link pl-1" to="/">
+                    <RouterLink href="#" class="nav-link pl-1" to="/lab">
                         <Logo>
                             <template #icon>
                                 <AtomSVG />
@@ -75,20 +75,12 @@ import IconImac from '~icons/heroicons-solid/computer-desktop'
                         <IconIpad class="icon-item mr-h" style="font-size: 1.2rem;" />
                         <IconMacbook class="icon-item mr-h" style="font-size: 1.2rem;" />
                         <IconImac class="icon-item mr-h" style="font-size: 1.2rem;" />
+                        <!-- <ion-gear-a style="font-size: 1.2rem;"></ion-gear-a> -->
                     </div>
                 </div>
-                <!-- <div class="item">
-                    <div class="icon pr-h">
-                        <IconGear style="font-size: 1.2rem;" />
-                        <ion-gear-a style="font-size: 1.2rem;"></ion-gear-a>
-                    </div>
-                    <a class="text">
-                        <p>Settings</p>
-                    </a>
-                </div> -->
                 <ul class="settings-nav">
                     <li class="settings-item">
-                        <RouterLink href="#" class="settings-link pl-1" to="/markdown">
+                        <RouterLink href="#" class="settings-link pl-1" to="/docs">
                             <IconNight style="font-size: 1.2rem;" />
                             <span class="link-text">Themify</span>
                         </RouterLink>
@@ -101,7 +93,7 @@ import IconImac from '~icons/heroicons-solid/computer-desktop'
                     </li>
                     <li class="settings-item">
                         <RouterLink href="#" class="settings-link pl-1" to="/docs">
-                            <IconDocs class="icon-item" style="font-size: 1.2rem;" />
+                            <IconDocs style="font-size: 1.2rem;" />
                             <span class="link-text">Docs</span>
                         </RouterLink>
                     </li>
@@ -120,26 +112,6 @@ import IconImac from '~icons/heroicons-solid/computer-desktop'
 </template>
 
 <style>
-.outline:hover {
-    background: hsl(160, 86%, 26%);
-    /* padding: 0.5rem;  */
-}
-
-.outline:hover {
-    background: hsl(160, 86%, 26%);
-    /* padding: 0.5rem;  */
-}
-
-nav {
-    width: 100%;
-    font-size: 12px;
-    text-align: center;
-}
-
-nav a.router-link-exact-active {
-    color: var(--color-text);
-}
-
 .menu {
     position: fixed;
     display: flex;
@@ -149,15 +121,6 @@ nav a.router-link-exact-active {
     height: 100vh;
     transition: width 600ms ease;
     border-right: 1px solid hsl(160, 86%, 26%);
-}
-
-.transform-rotate {
-    transform: rotate(0deg);
-    transition: transform(300ms);
-}
-
-.menu:hover .transform-rotate {
-    transform: rotate(-540deg);
 }
 
 .logo {
@@ -180,8 +143,17 @@ nav a.router-link-exact-active {
     /* background: var(--bg-secondary); */
 }
 
-.hover-logo:hover,
-.logo:hover {
+.logo-rotate {
+    transform: rotate(0deg);
+    transition: transform(300ms);
+}
+
+.menu:hover .logo-rotate {
+    transform: rotate(-540deg);
+}
+
+.logo:hover,
+.logo-hover:hover {
     background: var(--vt-c-black);
 }
 
@@ -217,37 +189,30 @@ nav a.router-link-exact-active {
 }
 
 .nav-link:hover {
+    color: var(--bg-primary);
     filter: grayscale(0%) opacity(1);
 }
 
 .link-text {
     /* display: none; */
     margin-left: 1rem;
+    color: var(--color-text);
 }
 
 .settings {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
     border-top: 1px solid hsl(160, 86%, 26%);
-}
-
-.settings-item {
-    width: 100%;
 }
 
 .settings-link {
     display: flex;
     align-items: center;
     height: 3rem;
-    /* color: pink; */
-    filter: grayscale(100%) opacity(0.7);
-    transition: 600ms;
+    color: var(--color-text);
 }
 
 .settings-link:hover {
-    filter: grayscale(0%) opacity(1);
+    
+    color: var(--primary-accent);
 }
 
 .menu-item:last-of-type {
@@ -268,18 +233,9 @@ nav a.router-link-exact-active {
     /* outline: 1px solid hsl(160, 86%, 26%); */
 }
 
-.icon-item:hover {
-color: hsl(160, 86%, 26%);
-}
-
-.center-items {
-    /* font-size: 21px; */
-    display: flex;
-    align-items: center;
-    /* outline: 1px solid hsl(160, 86%, 26%); */
-}
 
 .width-calculator {
+    padding-top: 0.25rem;
     font-size: 1rem;
 }
 </style>

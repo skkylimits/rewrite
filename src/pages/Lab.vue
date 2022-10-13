@@ -1,9 +1,16 @@
 <script setup>
-import { reactive, ref } from 'vue'
+import { reactive, ref, onMounted } from 'vue'
 import { useElementSize } from '@vueuse/core'
 
 const el = ref(null)
 const { width, height } = useElementSize(el)
+
+
+onMounted(() => {
+    // const { width, height } = useElementSize(el)
+    console.log(height.value) // 0 
+    console.log(el.value.offsetHeight) // 998
+})
 </script>
 
 <template>
@@ -14,13 +21,6 @@ const { width, height } = useElementSize(el)
         Height: {{ height }}
         Width: {{ width }}
       </div>
-      <section class="menus">
-        <div class="containerx">
-          <div class="menu-item" />
-          <div class="menu-item" />
-          <div class="menu-item" />
-        </div>
-      </section>
     </div>
   </div>
 </template>
