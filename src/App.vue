@@ -126,9 +126,6 @@ import IconImac from '~icons/heroicons-solid/computer-desktop'
 .logo {
     height: 100%;
     min-width: 15rem;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
     margin-left: -0.5rem;
     /* background: black; */
 
@@ -136,11 +133,8 @@ import IconImac from '~icons/heroicons-solid/computer-desktop'
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    /* text-align: center; */
     letter-spacing: 0.3ch;
 
-    /* color: var(--text-secondary); */
-    /* background: var(--bg-secondary); */
 }
 
 .logo-rotate {
@@ -165,14 +159,11 @@ import IconImac from '~icons/heroicons-solid/computer-desktop'
 }
 
 .navbar {
-    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 100%; */
-    /* outline: 1px solid hsl(160, 86%, 26%); */
 }
 
 .nav-item {
@@ -183,7 +174,6 @@ import IconImac from '~icons/heroicons-solid/computer-desktop'
     display: flex;
     align-items: center;
     height: 5rem;
-    /* color: pink; */
     filter: grayscale(100%) opacity(0.7);
     transition: 600ms;
 }
@@ -222,15 +212,16 @@ import IconImac from '~icons/heroicons-solid/computer-desktop'
 .viewport-sizes {
     display: flex;
     justify-content: center;
-    /* outline: 1px solid hsl(160, 86%, 26%); */
 }
 
 .icon {
     display: flex;
     align-items: center;
     padding: 1rem;
+}
 
-    /* outline: 1px solid hsl(160, 86%, 26%); */
+.icon-item:hover {
+    color: var(--primary-accent)
 }
 
 
