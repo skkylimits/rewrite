@@ -1,5 +1,6 @@
 <script setup>
 import Logo from './components/Logo.vue'
+import DarkMode from './components/DarkMode.vue'
 import FireshipSVG from './components/svg/SVGFireship.vue'
 import AtomSVG from './components/svg/SVGAtom.vue'
 import MoleculeSVG from './components/svg/SVGMolecule.vue'
@@ -12,6 +13,12 @@ import IconIphone from '~icons/clarity/mobile-solid'
 import IconIpad from '~icons/mdi/tablet-ipad'
 import IconMacbook from '~icons/material-symbols/laptop-mac-outline'
 import IconImac from '~icons/heroicons-solid/computer-desktop'
+
+
+import { useToggle } from '@vueuse/shared'
+// import { isDark } from '../../.vitepress/theme/composables/dark'
+// const isDark = useDark()
+// const toggleDark = useToggle(isDark)
 </script>
 
 <template>
@@ -87,7 +94,7 @@ import IconImac from '~icons/heroicons-solid/computer-desktop'
                 <ul class="settings-nav">
                     <li class="settings-item">
                         <RouterLink href="#" class="settings-link pl-1" to="/docs">
-                            <IconNight style="font-size: 1.2rem;" />
+                            <DarkMode> </DarkMode>
                             <span class="link-text">Themify</span>
                         </RouterLink>
                     </li>
@@ -152,10 +159,10 @@ import IconImac from '~icons/heroicons-solid/computer-desktop'
     transform: rotate(-540deg);
 }
 
-.logo:hover,
+/* .logo:hover,
 .logo-hover:hover {
     background: var(--vt-c-black);
-}
+} */
 
 .search-box {
     padding-left: 0.5rem;
@@ -207,7 +214,7 @@ import IconImac from '~icons/heroicons-solid/computer-desktop'
 }
 
 .settings-link:hover {
-    
+
     color: var(--primary-accent);
 }
 

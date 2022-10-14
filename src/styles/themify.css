@@ -4,7 +4,7 @@
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
 
-  --vt-c-black: #181818;
+  --vt-c-black: #121212;
   --vt-c-black-soft: #222222;
   --vt-c-black-mute: #282828;
 
@@ -42,8 +42,7 @@
   --section-gap: 160px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+.dark {
     --color-background: var(--vt-c-black);
     --color-background-soft: var(--vt-c-black-soft);
     --color-background-mute: var(--vt-c-black-mute);
@@ -56,7 +55,14 @@
 
     --primary-accent: var(--vt-c-primary-accent);
     --secondary-accent: var(--vt-c-secondary-accent);
-  }
+}
+
+.dark #darkIcon {
+    display: block;
+}
+
+.light #lightIcon {
+    display: block;
 }
 
 *,

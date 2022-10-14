@@ -9,6 +9,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     App: typeof import('./src/components/App.vue')['default']
     copy: typeof import('./src/components/svg/SVGOrganism copy.vue')['default']
+    DarkMode: typeof import('./src/components/DarkMode.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
     IconDocumentation: typeof import('./src/components/icons/IconDocumentation.vue')['default']
