@@ -26,6 +26,12 @@ import IconImac from '~icons/heroicons-solid/computer-desktop'
                             <FireshipSVG class="logo-rotate" />
                         </template>
                     </Logo>
+                    <Logo class="mt-h">
+                        <!-- find a flexbox alternative -->
+                        <template #icon>
+                            <SVGG class="logo-rotate" />
+                        </template>
+                    </Logo>
                 </RouterLink>
                 <div class="search-box">
                     <input type="text" placeholder="Search">
@@ -38,7 +44,7 @@ import IconImac from '~icons/heroicons-solid/computer-desktop'
                     <RouterLink href="#" class="nav-link pl-1" to="/lab">
                         <Logo>
                             <template #icon>
-                                <AtomSVG />
+                                <SVGAtom />
                             </template>
                         </Logo>
                         <span class="link-text">Atoms</span>
