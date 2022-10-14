@@ -14,15 +14,16 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="lab">
-    <div class="container">
-      <h1>Lab</h1>
-      <div ref="el" class="element-size">
-        Height: {{ height }}
-        Width: {{ width }}
-      </div>
+    <div class="lab">
+        <div class="container">
+            <h1>Lab</h1>
+            <div ref="el" class="element-size">
+                Height: {{ height }}
+                Width: {{ width }}
+            </div>
+            <HelloWorld />
+        </div>
     </div>
-  </div>
 </template>
 
 <style>
@@ -39,3 +40,13 @@ onMounted(() => {
     overflow: auto;
 }
 </style>
+
+<script>
+import HelloWorld from './README.md'
+
+export default {
+    components: {
+        HelloWorld,
+    },
+}
+</script>
