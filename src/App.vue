@@ -48,7 +48,7 @@ import { useToggle } from '@vueuse/shared'
         <div class="menu-item">
             <ul class="navbar">
                 <li class="nav-item">
-                    <RouterLink href="#" class="nav-link pl-1" to="/lab">
+                    <RouterLink href="#" class="nav-link pl-1" to="/">
                         <Logo>
                             <template #icon>
                                 <SVGAtom />
@@ -93,7 +93,7 @@ import { useToggle } from '@vueuse/shared'
                 </div>
                 <ul class="settings-nav">
                     <li class="settings-item">
-                        <RouterLink href="#" class="settings-link pl-1" to="/docs">
+                        <RouterLink href="#" class="settings-link pl-1" to="">
                             <DarkMode> </DarkMode>
                             <span class="link-text">Themify</span>
                         </RouterLink>
